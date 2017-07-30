@@ -14,9 +14,14 @@ h2 {
 
 
 li:nth-child(odd) {
-  background: #D9D6D6;
+  background: #F0F0EF;
 }
 
 .swagBag {
   margin-top: 100px;
+}
+
+.btn-complete {
+  display: inline-block;
+  height: 150px;
 }

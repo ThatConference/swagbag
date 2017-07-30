@@ -8,13 +8,13 @@ class Bag extends React.Component {
       <div className="swagBag">
         <hr/>
         <div className="row">
-          <div className="col-md-2">
+          <div className="col-md-3">
             <h2 className="text-uppercase">{details.staffMember}</h2>
           </div>
           <div className="col-md-2">
             <h2 className="text-uppercase">{details.orderNumber}</h2>
           </div>
-          <div className="col-md-6">
+          <div className="col-md-5">
             <ul className="list-unstyled">
               {
                 Object
