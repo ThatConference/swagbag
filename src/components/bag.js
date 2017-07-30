@@ -21,10 +21,10 @@ class Bag extends React.Component {
                 .keys(details.items)
                 .map(key => {
                   return <li className="row" key={key}>
-                  <span className="col-md-1">{details.items[key].quantity}</span>
-                  <span className="text-uppercase col-md-2">{details.items[key].ticketType}</span>
-                  <span className="text-uppercase col-md-2">{details.items[key].personType}</span>
-                  <span className="col-md-1">{details.items[key].shirtSize}</span>
+                  <span className="col-xs-1">{details.items[key].quantity}</span>
+                  <span className="text-uppercase col-xs-4">{details.items[key].ticketType}</span>
+                  <span className="text-uppercase col-xs-4">{details.items[key].personType}</span>
+                  <span className="col-xs-1">{details.items[key].shirtSize}</span>
                   </li>
                 })
               }
