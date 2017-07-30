@@ -5,25 +5,33 @@ class Bag extends React.Component {
   render(){
     const { details, index } = this.props
     return (
-      <div className="SwagBag">
+      <div className="swagBag">
         <hr/>
         <div className="row">
-          <div className="col-xs-4">
+          <div className="col-md-2">
             <h2 className="text-uppercase">{details.staffMember}</h2>
           </div>
-          <div className="col-xs-5">
+          <div className="col-md-2">
+            <h2 className="text-uppercase">{details.orderNumber}</h2>
+          </div>
+          <div className="col-md-6">
             <ul className="list-unstyled">
               {
                 Object
                 .keys(details.items)
                 .map(key => {
-                  return <li key={key}>{details.items[key].quantity} {details.items[key].ticketType}</li>
+                  return <li className="row" key={key}>
+                  <span className="col-md-1">{details.items[key].quantity}</span>
+                  <span className="text-uppercase col-md-2">{details.items[key].ticketType}</span>
+                  <span className="text-uppercase col-md-2">{details.items[key].personType}</span>
+                  <span className="col-md-1">{details.items[key].shirtSize}</span>
+                  </li>
                 })
               }
             </ul>
           </div>
-          <div className="col-xs-3">
-            <button className="btn-lg btn-default btn-block" type="submit" onClick={ () => this.props.removeBag(index)}>Complete</button>
+          <div className="col-md-2">
+            <button className="btn-lg btn-default btn-block btn-complete" type="submit" onClick={ () => this.props.removeBag(index)}>Complete</button>
           </div>
         </div>
       </div>

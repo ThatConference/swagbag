@@ -1,4 +1,22 @@
+body {
+  font-size: 200%;
+  font-weight: bold;
+}
 
 h2 {
+  font-size: 300%;
   color: black;
+}
+
+.list-unstyled {
+  line-height: 250%;
+}
+
+
+li:nth-child(odd) {
+  background: #D9D6D6;
+}
+
+.swagBag {
+  margin-top: 100px;
 }
