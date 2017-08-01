@@ -1,7 +1,8 @@
 module.exports = {
   asdf: {
-  	orderNumber: "5JRY",
+  	orderNumber: "5JRY1",
   	staffMember: "Carrie",
+    orderDate: "2017-08-01T15:00:37.4616032-05:00",
   	items: {
   		"AMM": {
   			quantity: 1,
@@ -24,8 +25,9 @@ module.exports = {
   	}
   },
   adsfasdf: {
-    orderNumber: "12SD",
+    orderNumber: "12SD4",
     staffMember: "Clark",
+    orderDate: "2017-08-01T15:10:37.4616032-05:00",
     items: {
       "AMM": {
         quantity: 1,
@@ -48,8 +50,9 @@ module.exports = {
     }
   },
   asdqweqw: {
-    orderNumber: "12SD",
+    orderNumber: "12SD3",
     staffMember: "michael",
+    orderDate: "2017-08-01T15:05:37.4616032-05:00",
     items: {
       "AMM": {
         quantity: 1,
@@ -72,8 +75,9 @@ module.exports = {
     }
   },
   jghjfghj: {
-    orderNumber: "12SD",
+    orderNumber: "12SD2",
     staffMember: "JAson",
+    orderDate: "2017-08-01T15:02:37.4616032-05:00",
     items: {
       "AMM": {
         quantity: 1,

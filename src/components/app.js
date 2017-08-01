@@ -22,7 +22,11 @@ class App extends React.Component {
     this.ref = base.syncState(`/swagbag/bags`
       , {
         context: this,
-        state: 'bags'
+        state: 'bags',
+        asArray: true,
+        queries: {
+            orderByChild: 'orderDate'
+        }
     })
   }
 
