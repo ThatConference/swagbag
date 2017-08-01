@@ -4,8 +4,15 @@ body {
 }
 
 h2 {
+  text-align: center;
   font-size: 250%;
   color: black;
+}
+
+h4 {
+    text-align: center;
+    font-size: 150%;
+    color: black;
 }
 
 .list-unstyled {
@@ -21,7 +28,25 @@ li:nth-child(odd) {
   margin-top: 100px;
 }
 
+.swagBag:not(:first-child) {
+    margin-top: 50px;
+}
+
+.swagItems {
+    padding-left: 0;
+    padding-right: 0;
+}
+
 .btn-complete {
+    font-size: 24px;
+    width: 100%;
   display: inline-block;
-  height: 150px;
+}
+
+.no-left-padding {
+    padding-left: 0;
+}
+
+.no-right-padding {
+    padding-right: 0;
 }

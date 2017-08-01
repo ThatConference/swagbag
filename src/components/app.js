@@ -51,7 +51,7 @@ class App extends React.Component {
          <div className="swagItems">
            <Header />
            <SwagBag loadSampleBags={this.loadSampleBags}/>
-           <ul className="">
+           <ul className="swagItems">
              {
                Object
                .keys(this.state.bags)
