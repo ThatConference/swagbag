@@ -1,4 +1,3 @@
-
 import React from 'react'
 import { render } from 'react-dom'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
@@ -12,11 +11,11 @@ const Root = () => {
   return (
     <Router>
       <div>
-        <Route exact path="/" component={Login}/>
-        <Route exact path="/swagbag" component={App}/>
+        <Route exact path='/' component={Login} />
+        <Route exact path='/swagbag' component={App} />
       </div>
     </Router>
   )
 }
 
-render(<Root/>, document.querySelector('#main'))
+render(<Root />, document.querySelector('#main'))
