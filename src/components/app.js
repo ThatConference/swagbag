@@ -12,6 +12,7 @@ class App extends React.Component {
     super()
     this.removeBag = this.removeBag.bind(this)
     this.loadSampleBags = this.loadSampleBags.bind(this)
+    this.sortBags = this.sortBags.bind(this)
 
     this.state = {
       bags: {}
@@ -45,7 +46,20 @@ class App extends React.Component {
     })
   }
 
+  sortBags (firstKey, secondKey) {
+    const { bags } = this.state
+
+    const first = bags[firstKey]
+    const second = bags[secondKey]
+    if (first.orderDate < second.orderDate) return -1
+    if (first.orderDate > second.orderDate) return 1
+
+    return 0
+  }
+
   render () {
+    const { bags } = this.state
+
     return (
       <div className='swagItems'>
         <Header />
@@ -53,8 +67,9 @@ class App extends React.Component {
         <ul className='swagItems'>
           {
             Object
-            .keys(this.state.bags)
-            .map(key => <Bag key={key} index={key} details={this.state.bags[key]} removeBag={this.removeBag} />)
+            .keys(bags)
+            .sort(this.sortBags)
+            .map(key => <Bag key={key} index={key} details={bags[key]} removeBag={this.removeBag} />)
           }
         </ul>
       </div>
