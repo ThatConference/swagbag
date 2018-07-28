@@ -1,5 +1,5 @@
 body {
-  font-size: 300%;
+  font-size: 400%;
   font-weight: bold;
 }
 
@@ -10,43 +10,38 @@ h2 {
 }
 
 h4 {
-    text-align: center;
-    font-size: 150%;
-    color: black;
+  text-align: center;
+  font-size: 150%;
+  color: black;
 }
 
 .list-unstyled {
   line-height: 250%;
 }
 
-
 li:nth-child(odd) {
-  background: #F0F0EF;
-}
-
-.swagBag {
-  margin-top: 100px;
+  background: #f0f0ef;
 }
 
 .swagBag:not(:first-child) {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 .swagItems {
-    padding-left: 0;
-    padding-right: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .btn-complete {
-    font-size: 24px;
-    width: 100%;
+  font-size: 24px;
+  width: 100%;
   display: inline-block;
 }
 
 .no-left-padding {
-    padding-left: 0;
+  padding-left: 0;
 }
 
 .no-right-padding {
-    padding-right: 0;
+  padding-right: 0;
 }
