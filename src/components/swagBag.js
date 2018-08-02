@@ -4,9 +4,9 @@ import PropTypes from 'prop-types'
 class SwagBag extends React.Component {
   render () {
     return (
-      <div>
-        <button className='btn-lg btn-default' onClick={this.props.loadSampleBags}>load sample bags</button>
-      </div>
+       <div>
+        {/* <button className='btn-lg btn-default' onClick={this.props.loadSampleBags}>load sample bags</button> */}
+       </div>
     )
   }
 }
